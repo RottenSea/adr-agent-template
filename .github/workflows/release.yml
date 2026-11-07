@@ -16,8 +16,10 @@ jobs:
 
       - name: Pack the vault
         run: |
-          cd vault
-          zip -r "../adr-agent-template-${GITHUB_REF_NAME}.zip" . -x "*.gitkeep"
+          mkdir dist
+          cp -r vault dist/adr-agent-template
+          cd dist
+          zip -r "../adr-agent-template-${GITHUB_REF_NAME}.zip" adr-agent-template
 
       - name: Take the release notes from CHANGELOG.md
         run: |
