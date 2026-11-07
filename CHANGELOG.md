@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- The agent may change project repositories from the vault, not only read them
+
 ## [0.3.0] - 2026-11-07
 
 ### Changed

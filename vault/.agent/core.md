@@ -31,7 +31,7 @@ Below the top level, every folder is a project.
 ## Rules
 
 - The user makes every decision. Nothing goes into Decisions until the user has answered it.
-- Read project repositories, but do not change them from this vault. When you do work in a project repository, never mention this vault in its code, comments, docs or commit messages, and never cite round or question numbers there.
+- You may read and change project repositories from this vault. In a project repository, never mention this vault in its code, comments, docs or commit messages, and never cite round or question numbers there.
 - Files the user wrote are read-only. Ask before changing them.
 - Before you add a decision, a skill, a Doc or a note, check whether an existing one already covers it.
 - Never make up facts, numbers or sources. Write `TBD` for what you do not know.
