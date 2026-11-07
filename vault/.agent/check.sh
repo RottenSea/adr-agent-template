@@ -1,7 +1,8 @@
 #!/bin/sh
 # Check the vault's links and indexes.
 # Usage: sh .agent/check.sh (from the vault root)
-# Reports broken links, files with more than one parent, cycles, and folders without index.md.
+# Reports broken links, files with more than one parent, cycles, files their
+# folder's index.md does not link to, and folders without index.md.
 
 cd "${1:-$(dirname "$0")/..}" || exit 1
 export LC_ALL=C
@@ -54,6 +55,14 @@ find . -path ./.obsidian -prune -o -path ./.agent -prune -o -path ./.git -prune 
   [ -f "$d/index.md" ] || echo "NO INDEX  ${d#./}"
 done
 
-cut -f2 "$tmp/edges" | sort -u > "$tmp/targets"
+# Every file must be linked from the index.md of its folder, and every
+# folder's index.md from the index.md one level up.
+while IFS= read -r f; do
+  case $f in index.md|AGENTS.md|3-Discussions/*) continue ;; esac
+  d=$(dirname "$f")
+  [ "${f##*/}" = index.md ] && d=$(dirname "$d")
+  if [ "$d" = . ]; then p=index.md; else p=$d/index.md; fi
+  grep -qxF "$p$tab$f" "$tmp/edges" || echo "UNLISTED  $f (not linked from $p)"
+done < "$tmp/files"
+
 echo "files $(wc -l < "$tmp/files" | tr -d ' '), links $(wc -l < "$tmp/edges" | tr -d ' ')"
-echo "roots: $(comm -23 "$tmp/files" "$tmp/targets" | tr '\n' ' ')"

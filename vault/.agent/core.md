@@ -21,12 +21,12 @@ Below the top level, every folder is a project.
 ## Indexes and links
 
 - Every folder has an `index.md` (`.agent/templates/index.md`): one sentence on what the folder holds, then one line per subfolder and file, linking to it. `2-Skills/index.md` is the skill list, and a project's Decisions `index.md` is the decisions themselves.
-- Two exceptions. `3-Discussions/` has no `index.md` at any level, since its files change every round; the root `index.md` names it without a link, and you create `3-Discussions/<project>/` when a decision starts. Decisions are never linked: `4-Decisions/index.md` lists projects by name only.
+- One exception: `3-Discussions/` has no `index.md` at any level, since its files change every round. The root `index.md` names it without a link, and you create `3-Discussions/<project>/` when a decision starts.
 - Links form a tree. Link every file from the `index.md` of its folder and nowhere else; never link back up or across, and never embed files in a Canvas. Mention any other file by its path in backticks. Files inside `3-Discussions/` may link each other as you see fit.
 - When you add, move or remove a file or folder, update the indexes above it.
 - File names repeat across projects, so link with the path from the vault root: `[[5-Docs/<project>/index|<project>]]`.
 - After you move or rename a file from the shell, update every reference to it: wikilinks, and paths in backticks, including those in `AGENTS.md`, `.agent/` and skills. Obsidian only updates links for renames made inside the app.
-- After you finalize a decision or move files, run `sh .agent/check.sh` from the vault root. It reports broken links, files with more than one parent, cycles and folders without an `index.md`. Fix what it reports before you reply.
+- After you finalize a decision or move files, run `sh .agent/check.sh` from the vault root. It reports broken links, files with more than one parent, cycles, files no `index.md` links to, and folders without an `index.md`. Fix what it reports before you reply.
 
 ## Rules
 

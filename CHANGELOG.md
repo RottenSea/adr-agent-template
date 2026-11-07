@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - The agent may change project repositories from the vault, not only read them
+- `4-Decisions/index.md` links each project's decisions, like every other index
+- `check.sh` reports every file the `index.md` of its folder does not link to, instead of listing the roots
 
 ## [0.3.0] - 2026-11-07
 
