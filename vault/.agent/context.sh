@@ -12,9 +12,10 @@ show() {
 
 show .agent/core.md
 show .agent/workflow.md
-show 1-Memory/index.md
+show 1-Memory/project.md
 show 1-Memory/experiences.md
 show 2-Skills/index.md
+show 2-Skills/observed.md
 
 if [ -n "$1" ]; then
   for f in 1-Memory/"$1"/*.md; do show "$f"; done

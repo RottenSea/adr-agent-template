@@ -2,6 +2,10 @@
 
 Explanation: [[3-Discussions/<project>/R<n>-explanation|R<n>-explanation]]
 
+## To do
+
+- <Something the user has to do by hand. Leave this section out when there is nothing.>
+
 ## Open
 
 ### Q1 ○ <Title>
@@ -10,13 +14,18 @@ Explanation: [[3-Discussions/<project>/R<n>-explanation|R<n>-explanation]]
 
 - [ ] A. <Option> (Recommended)
 - [ ] B. <Option>
+- [ ] Discuss first
 
 Addition: 
 
 ### Q2 □ <Title>
 
-- [ ] A. <Option> (Recommended)
-- [ ] B. <Option> (Recommended)
-- [ ] C. <Option>
+- A. <Thing to settle> (Recommended)
+  - [ ] Yes
+  - [ ] No
+- B. <Thing to settle>
+  - [ ] Yes
+  - [ ] No
+- [ ] Discuss first
 
 Addition: 
