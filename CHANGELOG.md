@@ -25,7 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - The release zip holds a single `adr-agent-template` folder, and the README says to rename it and move it into a directory of your own
 - The README explains how these records differ from standard ADRs
-
 - The project table moved from `1-Memory/index.md` to `1-Memory/project.md`; `1-Memory/index.md` is now the folder's index
 - Explanation files open with what earlier rounds settled, lead each section with the recommendation, and use tables and code blocks for comparisons
 - A question that settles several things lists each one with `Yes` and `No` checkboxes, so an unanswered item stays visible
