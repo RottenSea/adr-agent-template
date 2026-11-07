@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - README covers installation, usage, the vault layout and upgrading
 
-## [0.0.1] - 2026-11-07
+## 0.0.1 - 2026-11-07
 
 ### Added
 
@@ -26,5 +26,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - This changelog
 
 [unreleased]: https://github.com/RottenSea/adr-agent-template/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/RottenSea/adr-agent-template/compare/v0.0.1...v0.1.0
-[0.0.1]: https://github.com/RottenSea/adr-agent-template/releases/tag/v0.0.1
+[0.1.0]: https://github.com/RottenSea/adr-agent-template/releases/tag/v0.1.0
