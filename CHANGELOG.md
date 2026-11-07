@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `CONTRIBUTING.md`, covering issues, pull requests, commit messages, what belongs in the core, and releasing
+
+### Changed
+
+- The README's Contributing section links to `CONTRIBUTING.md`
+
 ## [0.2.0] - 2026-11-07
 
 ### Added

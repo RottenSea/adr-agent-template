@@ -40,7 +40,7 @@ Replace `AGENTS.md` and `.agent/` with the ones from the new release. The rest o
 
 ## Contributing
 
-Issues and pull requests are welcome.
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
