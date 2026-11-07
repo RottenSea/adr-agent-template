@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- An empty `3-Discussions/` folder in the release zip
+
 ### Changed
 
 - The agent may change project repositories from the vault, not only read them
