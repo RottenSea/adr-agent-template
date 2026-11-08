@@ -30,7 +30,7 @@ Each round of questions goes into `4-Discussions/<project>/R<n>-options.md`, wit
 | `1-Memory/` | Your projects and their local paths, plus what the agent has learned |
 | `2-Skills/` | Your habits, as the agent has learned them |
 | `3-Decisions/` | Decisions in effect, one folder per project |
-| `4-Discussions/` | The decision in progress, one folder per project |
+| `4-Discussions/` | The decision in progress, one folder per project; a decision about no single project sits at the top |
 | `5-Docs/` | Structured documents, one folder per project |
 | `6-Notes/` | Answers to side questions, one folder per project |
 

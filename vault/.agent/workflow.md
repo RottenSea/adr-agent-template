@@ -1,6 +1,6 @@
 # Workflow
 
-A project has at most one decision in progress. Its files live directly in `4-Discussions/<project>/`.
+A project has at most one decision in progress. Its files live directly in `4-Discussions/<project>/`. A decision that belongs to no single project lives directly in `4-Discussions/`, also one at a time; when it is finalized, what applies to every project becomes a skill, and facts such as paths go into `1-Memory/`.
 
 ## Starting
 

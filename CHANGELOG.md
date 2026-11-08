@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `plan.md`: before a decision is carried out outside the vault, the agent writes the steps there and the user approves them in a last round, from `templates/plan.md`
+- A decision that belongs to no single project sits directly in `4-Discussions/`, and `context.sh` lists that folder at every start
 
 ### Changed
 

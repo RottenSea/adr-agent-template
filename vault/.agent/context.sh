@@ -16,6 +16,8 @@ show 1-Memory/project.md
 show 1-Memory/experiences.md
 show 2-Skills/index.md
 show 2-Skills/observed.md
+printf '\n===== 4-Discussions =====\n'
+ls -p 4-Discussions 2>/dev/null
 
 if [ -n "$1" ]; then
   for f in 1-Memory/"$1"/*.md; do show "$f"; done
