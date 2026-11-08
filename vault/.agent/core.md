@@ -11,8 +11,8 @@ This vault is where you and the user make decisions about the user's projects, w
 | `0-Archive/` | Superseded decisions and retired projects, in the same layout as the top level. |
 | `1-Memory/` | `project.md` lists each project and its local path. `experiences.md` holds lessons that apply everywhere; `<project>/experiences.md` holds lessons for one project. |
 | `2-Skills/` | Skills learned from the user, listed in `index.md`. Global skills sit at the root, project skills in `<project>/`. `observed.md` holds habits seen only once. |
-| `3-Discussions/<project>/` | The decision in progress: `R<n>-options.md`, `R<n>-explanation.md` and `Queue.md`. |
-| `4-Decisions/<project>/` | Decisions in effect. |
+| `3-Decisions/<project>/` | Decisions in effect. |
+| `4-Discussions/<project>/` | The decision in progress: `R<n>-options.md`, `R<n>-explanation.md` and `Queue.md`. |
 | `5-Docs/<project>/` | Structured documents for the user. |
 | `6-Notes/<project>/` | Explanations of side questions the user asked. |
 
@@ -21,8 +21,8 @@ Below the top level, every folder is a project.
 ## Indexes and links
 
 - Every folder has an `index.md` (`.agent/templates/index.md`): one sentence on what the folder holds, then one line per subfolder and file, linking to it. `2-Skills/index.md` is the skill list, and a project's Decisions `index.md` is the decisions themselves.
-- One exception: `3-Discussions/` has no `index.md` at any level, since its files change every round. The root `index.md` names it without a link, and you create `3-Discussions/<project>/` when a decision starts.
-- Links form a tree. Link every file from the `index.md` of its folder and nowhere else; never link back up or across, and never embed files in a Canvas. Mention any other file by its path in backticks. Files inside `3-Discussions/` may link each other as you see fit.
+- One exception: `4-Discussions/` has no `index.md` at any level, since its files change every round. The root `index.md` names it without a link, and you create `4-Discussions/<project>/` when a decision starts.
+- Links form a tree. Link every file from the `index.md` of its folder and nowhere else; never link back up or across, and never embed files in a Canvas. Mention any other file by its path in backticks. Files inside `4-Discussions/` may link each other as you see fit.
 - When you add, move or remove a file or folder, update the indexes above it.
 - File names repeat across projects, so link with the path from the vault root: `[[5-Docs/<project>/index|<project>]]`.
 - After you move or rename a file from the shell, update every reference to it: wikilinks, and paths in backticks, including those in `AGENTS.md`, `.agent/` and skills. Obsidian only updates links for renames made inside the app.

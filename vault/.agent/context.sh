@@ -19,7 +19,7 @@ show 2-Skills/observed.md
 
 if [ -n "$1" ]; then
   for f in 1-Memory/"$1"/*.md; do show "$f"; done
-  show 4-Decisions/"$1"/index.md
-  printf '\n===== 3-Discussions/%s =====\n' "$1"
-  ls 3-Discussions/"$1" 2>/dev/null
+  show 3-Decisions/"$1"/index.md
+  printf '\n===== 4-Discussions/%s =====\n' "$1"
+  ls 4-Discussions/"$1" 2>/dev/null
 fi

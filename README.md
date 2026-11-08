@@ -18,19 +18,19 @@ It works with any agent that reads `AGENTS.md` and can run a shell script.
 
 Start your agent from the vault root and tell it which project you want to decide something about. The first time, it asks for the project's local path.
 
-Each round of questions goes into `3-Discussions/<project>/R<n>-options.md`, with a longer explanation in `R<n>-explanation.md`. Tick the options you want, write anything else after `Addition:`, then tell the agent you have answered. When nothing is left to ask, the agent writes the result to `4-Decisions/<project>/index.md` and deletes the round files.
+Each round of questions goes into `4-Discussions/<project>/R<n>-options.md`, with a longer explanation in `R<n>-explanation.md`. Tick the options you want, write anything else after `Addition:`, then tell the agent you have answered. When nothing is left to ask, the agent writes the result to `3-Decisions/<project>/index.md` and deletes the round files.
 
 ### Layout
 
 | Path | Contents |
 |---|---|
 | `AGENTS.md`, `.agent/` | The agent's rules, workflow and file templates |
-| `index.md` | The starting point. Every folder except `3-Discussions/` has an `index.md` linking what is inside it |
+| `index.md` | The starting point. Every folder except `4-Discussions/` has an `index.md` linking what is inside it |
 | `0-Archive/` | Superseded decisions and retired projects |
 | `1-Memory/` | Your projects and their local paths, plus what the agent has learned |
 | `2-Skills/` | Your habits, as the agent has learned them |
-| `3-Discussions/` | The decision in progress, one folder per project |
-| `4-Decisions/` | Decisions in effect, one folder per project |
+| `3-Decisions/` | Decisions in effect, one folder per project |
+| `4-Discussions/` | The decision in progress, one folder per project |
 | `5-Docs/` | Structured documents, one folder per project |
 | `6-Notes/` | Answers to side questions, one folder per project |
 

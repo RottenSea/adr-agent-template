@@ -51,14 +51,14 @@ awk -F"$tab" '
 ' "$tmp/edges"
 
 find . -path ./.obsidian -prune -o -path ./.agent -prune -o -path ./.git -prune -o \
-  -path ./3-Discussions -prune -o -type d -print | while IFS= read -r d; do
+  -path ./4-Discussions -prune -o -type d -print | while IFS= read -r d; do
   [ -f "$d/index.md" ] || echo "NO INDEX  ${d#./}"
 done
 
 # Every file must be linked from the index.md of its folder, and every
 # folder's index.md from the index.md one level up.
 while IFS= read -r f; do
-  case $f in index.md|AGENTS.md|3-Discussions/*) continue ;; esac
+  case $f in index.md|AGENTS.md|4-Discussions/*) continue ;; esac
   d=$(dirname "$f")
   [ "${f##*/}" = index.md ] && d=$(dirname "$d")
   if [ "$d" = . ]; then p=index.md; else p=$d/index.md; fi

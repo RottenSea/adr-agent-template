@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Decisions in effect move to `3-Decisions/` and decisions in progress to `4-Discussions/`, so the folders read in the order a decision is used. To upgrade, rename `4-Decisions/` to `3-Decisions/`, `3-Discussions/` to `4-Discussions/` and `0-Archive/4-Decisions/` to `0-Archive/3-Decisions/`, then update the links and paths that name them
+
 ## [0.4.0] - 2026-11-07
 
 ### Added
