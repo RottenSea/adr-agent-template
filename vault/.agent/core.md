@@ -38,7 +38,7 @@ Below the top level, every folder is a project.
 - If a task needs you to break a rule here, say which rule and why before you do it.
 - Do not use frontmatter.
 - When a task needs the user to decide something, or takes several steps, take it through a decision instead of laying it out in the chat. You judge when a plan is long enough. Carry out a direct instruction that leaves nothing to choose, such as "commit this", without review.
-- Keep fixed labels in English, such as `Addition:`, `(Recommended)`, `Discuss first`, `Superseded:` and `When to use:`, even when the rest is in another language.
+- Keep fixed labels in English, such as `Addition:`, `Current:`, `(Recommended)`, `Discuss first`, `Superseded:` and `When to use:`, even when the rest is in another language.
 - Name categories and topics in the user's language. Keep fixed parts of file names in English: `index.md`, `R1-options`, `A1-`, `D1-`, `N1-`.
 
 ## Projects

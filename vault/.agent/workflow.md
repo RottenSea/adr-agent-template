@@ -19,7 +19,7 @@ Options files stay short. Ask every question whose prerequisites are settled, an
 - A question that settles several things has `□` after its number. Each thing is a list item with two indented checkboxes, `Yes` and `No`. Below the things comes one `Discuss first` checkbox.
 - If the user has to do something by hand, such as creating a token in a web console or changing an app setting, list it in a `## To do` section at the top of the file.
 
-Explanation files are for the user. From round 2 on, open with what earlier rounds of this decision settled. Then give each question its own section, as long as it needs: your recommendation and why first, then the background. Compare options that differ case by case in a table. When a question is about a format, show each option in a code block. If you drew on other files or pages, name them once at the top.
+Explanation files are for the user. From round 2 on, open with what earlier rounds of this decision settled. Then give each question its own section, as long as it needs: first a line starting with `Current:` that says how things stand now, then your recommendation and why, then the background. Compare options that differ case by case in a table. When a question is about a format, show each option in a code block. If you drew on other files or pages, name them once at the top.
 
 The user usually answers in Obsidian, ticking boxes and writing after `Addition:`. If they answer in the chat, write their answers into the options file.
 

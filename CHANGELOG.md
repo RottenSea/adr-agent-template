@@ -10,13 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `plan.md`: before a decision is carried out outside the vault, the agent writes the steps there and the user approves them in a last round, from `templates/plan.md`
+- Each question's section in an explanation file opens with a `Current:` line on how things stand now
 - A decision that belongs to no single project sits directly in `4-Discussions/`, and `context.sh` lists that folder at every start
 
 ### Changed
 
 - A task that needs the user to decide something, or takes several steps, goes through a decision instead of the chat. A direct instruction that leaves nothing to choose is carried out without review
 
-- Decisions in effect move to `3-Decisions/` and decisions in progress to `4-Discussions/`, so the folders read in the order a decision is used. To upgrade, rename `4-Decisions/` to `3-Decisions/`, `3-Discussions/` to `4-Discussions/` and `0-Archive/4-Decisions/` to `0-Archive/3-Decisions/`, then update the links and paths that name them
+- Decisions in effect move to `3-Decisions/` and decisions in progress to `4-Discussions/`. To upgrade, rename `4-Decisions/` to `3-Decisions/`, `3-Discussions/` to `4-Discussions/` and `0-Archive/4-Decisions/` to `0-Archive/3-Decisions/`, then update the links and paths that name them
 
 ## [0.4.0] - 2026-11-07
 
