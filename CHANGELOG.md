@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-11-08
+
 ### Added
 
 - `plan.md`: before a decision is carried out outside the vault, the agent writes the steps there and the user approves them in a last round, from `templates/plan.md`
@@ -16,7 +18,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - A task that needs the user to decide something, or takes several steps, goes through a decision instead of the chat. A direct instruction that leaves nothing to choose is carried out without review
-
 - Decisions in effect move to `3-Decisions/` and decisions in progress to `4-Discussions/`. To upgrade, rename `4-Decisions/` to `3-Decisions/`, `3-Discussions/` to `4-Discussions/` and `0-Archive/4-Decisions/` to `0-Archive/3-Decisions/`, then update the links and paths that name them
 
 ## [0.4.0] - 2026-11-07
@@ -94,7 +95,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README following Standard Readme
 - This changelog
 
-[unreleased]: https://github.com/RottenSea/adr-agent-template/compare/v0.4.0...HEAD
+[unreleased]: https://github.com/RottenSea/adr-agent-template/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/RottenSea/adr-agent-template/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/RottenSea/adr-agent-template/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/RottenSea/adr-agent-template/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/RottenSea/adr-agent-template/compare/v0.2.0...v0.2.1
