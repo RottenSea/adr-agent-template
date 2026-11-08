@@ -12,7 +12,7 @@ This vault is where you and the user make decisions about the user's projects, w
 | `1-Memory/` | `project.md` lists each project and its local path. `experiences.md` holds lessons that apply everywhere; `<project>/experiences.md` holds lessons for one project. |
 | `2-Skills/` | Skills learned from the user, listed in `index.md`. Global skills sit at the root, project skills in `<project>/`. `observed.md` holds habits seen only once. |
 | `3-Decisions/<project>/` | Decisions in effect. |
-| `4-Discussions/<project>/` | The decision in progress: `R<n>-options.md`, `R<n>-explanation.md`, `plan.md` and `Queue.md`. A decision that belongs to no single project sits directly in `4-Discussions/`. |
+| `4-Discussions/<project>/` | The decision in progress: `R<n>-options.md`, `R<n>-explanation.md`, `plan.md` and `Queue.md`. A decision that belongs to no single project sits directly in `4-Discussions/`, and what it decides is used once from `plan.md`, then deleted. |
 | `5-Docs/<project>/` | Structured documents for the user. |
 | `6-Notes/<project>/` | Explanations of side questions the user asked. |
 

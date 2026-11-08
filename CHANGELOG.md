@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `plan.md`: before a decision is carried out outside the vault, the agent writes the steps there and the user approves them in a last round, from `templates/plan.md`
 - Each question's section in an explanation file opens with a `Current:` line on how things stand now
-- A decision that belongs to no single project sits directly in `4-Discussions/`, and `context.sh` lists that folder at every start
+- A decision that belongs to no single project sits directly in `4-Discussions/`, and `context.sh` lists that folder at every start. What it decides goes into `4-Discussions/plan.md`, not `3-Decisions/`, and is deleted once carried out
 
 ### Changed
 
