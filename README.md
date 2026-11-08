@@ -18,7 +18,7 @@ It works with any agent that reads `AGENTS.md` and can run a shell script.
 
 Start your agent from the vault root and tell it which project you want to decide something about. The first time, it asks for the project's local path.
 
-Each round of questions goes into `4-Discussions/<project>/R<n>-options.md`, with a longer explanation in `R<n>-explanation.md`. Tick the options you want, write anything else after `Addition:`, then tell the agent you have answered. When nothing is left to ask, the agent writes the result to `3-Decisions/<project>/index.md` and deletes the round files.
+Each round of questions goes into `4-Discussions/<project>/R<n>-options.md`, with a longer explanation in `R<n>-explanation.md`. Tick the options you want, write anything else after `Addition:`, then tell the agent you have answered. When nothing is left to ask and the decision needs work in a repository, the agent writes the steps into `plan.md` and asks you to approve them before doing any of it. Afterwards it writes the result to `3-Decisions/<project>/index.md` and deletes the round files and the plan.
 
 ### Layout
 

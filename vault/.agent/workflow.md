@@ -30,14 +30,25 @@ The user usually answers in Obsidian, ticking boxes and writing after `Addition:
 - A new question that belongs to this decision goes into the next round.
 - An unrelated question goes into `4-Discussions/<project>/Queue.md` (`.agent/templates/queue.md`), to be taken up after this decision.
 
+## The plan
+
+When the user has answered everything and you have nothing left to ask, check whether the decision needs work outside the vault, such as changes to a repository. If it does not, finalize.
+
+If it does, the user reviews a plan before you do any of it:
+
+1. Write `plan.md` in the decision's folder from `.agent/templates/plan.md`: every step you will take, in order, concrete enough to check, such as the text you will write or the files you will change.
+2. Write the next round's `R<n>-options.md` with a link to `plan.md` in place of the explanation, and one single-choice question: carry out the plan (Recommended), change it as written in `Addition:`, or `Discuss first`. This round has no explanation file.
+3. If the user asks for changes, edit `plan.md` in place, never a new copy, and ask again in the next round. If they approve the plan along with the changes, make the changes and go ahead.
+4. Once the user approves, carry out the plan. If a step cannot be done as planned, stop and ask in a new round.
+
 ## Finalizing
 
-When the user has answered everything and you have nothing left to ask, finalize without asking:
+After the plan is carried out, or when there is none, finalize without asking:
 
 1. Write the decisions into `3-Decisions/<project>/`.
 2. Move the decisions they replace to `0-Archive/3-Decisions/<project>/`.
 3. Update `5-Docs/<project>/` if a Doc is affected.
-4. Delete every `R<n>-*` file of this decision.
+4. Delete every `R<n>-*` file of this decision and its `plan.md`.
 5. Update the indexes of every folder you added files to.
 6. Run `sh .agent/check.sh` and fix what it reports.
 7. Tell the user what is waiting in `Queue.md`, if anything.

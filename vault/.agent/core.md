@@ -12,7 +12,7 @@ This vault is where you and the user make decisions about the user's projects, w
 | `1-Memory/` | `project.md` lists each project and its local path. `experiences.md` holds lessons that apply everywhere; `<project>/experiences.md` holds lessons for one project. |
 | `2-Skills/` | Skills learned from the user, listed in `index.md`. Global skills sit at the root, project skills in `<project>/`. `observed.md` holds habits seen only once. |
 | `3-Decisions/<project>/` | Decisions in effect. |
-| `4-Discussions/<project>/` | The decision in progress: `R<n>-options.md`, `R<n>-explanation.md` and `Queue.md`. |
+| `4-Discussions/<project>/` | The decision in progress: `R<n>-options.md`, `R<n>-explanation.md`, `plan.md` and `Queue.md`. |
 | `5-Docs/<project>/` | Structured documents for the user. |
 | `6-Notes/<project>/` | Explanations of side questions the user asked. |
 
@@ -37,6 +37,7 @@ Below the top level, every folder is a project.
 - Never make up facts, numbers or sources. Write `TBD` for what you do not know.
 - If a task needs you to break a rule here, say which rule and why before you do it.
 - Do not use frontmatter.
+- When a task needs the user to decide something, or takes several steps, take it through a decision instead of laying it out in the chat. You judge when a plan is long enough. Carry out a direct instruction that leaves nothing to choose, such as "commit this", without review.
 - Keep fixed labels in English, such as `Addition:`, `(Recommended)`, `Discuss first`, `Superseded:` and `When to use:`, even when the rest is in another language.
 - Name categories and topics in the user's language. Keep fixed parts of file names in English: `index.md`, `R1-options`, `A1-`, `D1-`, `N1-`.
 
